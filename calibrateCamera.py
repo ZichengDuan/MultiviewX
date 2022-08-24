@@ -19,8 +19,8 @@ def calibrate():
         image = cv2.imread(f'Image_subsets/C{cam + 1}/0000.png')
         for point in visualize_foot_image:
             cv2.circle(image, tuple(point.astype(int)), 20, (0, 255, 0), -1)
-        plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
-        plt.show()
+        # plt.imshow(cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
+        # plt.show()
         points_2d_list, points_3d_list = [], []
         for view in range(9):
             points_2d_list.append(points_2d[:, 2 * view + 2:2 * (view + 1) + 2])

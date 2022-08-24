@@ -4,14 +4,14 @@
   <rows>3</rows>
   <cols>1</cols>
   <dt>d</dt>
-  <data>
-    -1.1362828203364030e+00 9.5154613239402941e-01
-    1.1516336249035808e+00</data></rvec>
+  <data type_id="binary">
+    MWQgICAgICAgICAgICAgICAgICAgICAgGcWUYtZA8b8euOzAfeXsPwTpgaVN1PI/
+    </data></rvec>
 <tvec type_id="opencv-matrix">
   <rows>3</rows>
   <cols>1</cols>
   <dt>d</dt>
-  <data>
-    7.4868071369351812e+00 -2.8946634464869287e+00
-    1.8175952780299705e+00</data></tvec>
+  <data type_id="binary">
+    MWQgICAgICAgICAgICAgICAgICAgICAgoE6ShX3yHUBJJXMLj9MFwH7E2XaA6fo/
+    </data></tvec>
 </opencv_storage>

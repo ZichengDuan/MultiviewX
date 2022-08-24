@@ -126,7 +126,8 @@ dmypy.json
 
 
 .idea
-/Image_subsets
-/annotations_positions
-/matchings
+# /Image_subsets
+# /annotations_positions
+# /matchings
 gt.txt
+rectangles.pom

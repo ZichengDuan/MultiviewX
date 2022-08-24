@@ -46,6 +46,7 @@ def create_pid_annotation(pid, pos, bbox_by_pos_cam):
 
 
 def annotate():
+    print("Starting inside annotation...")
     bbox_by_pos_cam = read_pom('rectangles.pom')
     gts = []
     for cam in range(NUM_CAM):
@@ -77,9 +78,9 @@ def annotate():
                         continue
                     cv2.rectangle(img, bbox[:2], bbox[2:], (0, 255, 0), 2)
                 img = Image.fromarray(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
-                img.save(f'bbox_cam{cam + 1}.png')
-                plt.imshow(img)
-                plt.show()
+                img.save(f'imgs/bbox_cam{cam + 1}.png')
+                # plt.imshow(img)
+                # plt.show()
                 pass
 
     pass
