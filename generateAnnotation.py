@@ -77,7 +77,7 @@ def annotate():
                     if bbox[0] == -1 and bbox[1] == -1:
                         continue
                     cv2.rectangle(img, bbox[:2], bbox[2:], (0, 255, 0), 2)
-                img = Image.fromarray(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
+                img = Image.fromarray(cv2.resize(cv2.cvtColor(img, cv2.COLOR_BGR2RGB), (int(img.shape[1] / 2), int(img.shape[0] / 2))))
                 img.save(f'imgs/bbox_cam{cam + 1}.png')
                 # plt.imshow(img)
                 # plt.show()

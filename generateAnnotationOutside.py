@@ -126,7 +126,7 @@ def annotate_outside():
                 for pt_2d in gt_2d_outside:
                     cv2.circle(img, (int(pt_2d[1]), int(pt_2d[2])), radius=4, color=(0,0,255), thickness=-1)
 
-                img = Image.fromarray(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
+                img = Image.fromarray(cv2.resize(cv2.cvtColor(img, cv2.COLOR_BGR2RGB), (int(img.shape[1] / 2), int(img.shape[0] / 2))))
                 img.save(f'imgs/bbox_cam{cam + 1}_outside.png')
                 # plt.imshow(img)
                 plt.show()
